@@ -1,9 +1,7 @@
 { pkgs, modulesPath, lib, ... }: {
 
   imports = [
-
-    "${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
-
+    "${modulesPath}/installer/cd-dvd/installation-cd-graphical-calamares-gnome.nix"
   ];
 
 
@@ -5608,7 +5606,7 @@ CONFIG_MEMTEST y
     # ----- Hyper-V Guest support ----- #
   virtualisation.hypervGuest = {
     enable = true;
-    videoMode = "1920x1080";
+    videoMode = "1024x768";
   };
 #  boot.blacklistedKernelModules = [ "hyperv_fb" ];
   
