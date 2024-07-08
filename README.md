@@ -15,6 +15,8 @@ I am using Nix packages 24.05.  If using the Microsfot config, all the BPF and B
 Download the .nix iso file into a folder.
 Run
 
+Note, the install boots a working terminal.  The system installed by the graphical installer doesn't seem to work, I am not sure why.
+
 ```
 nix-shell -p nixos-generators --run "nixos-generate --format iso --configuration ./iso_wsl.nix -o result"
 ```
