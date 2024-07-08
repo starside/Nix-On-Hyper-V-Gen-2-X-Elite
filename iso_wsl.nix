@@ -1,6 +1,7 @@
 { pkgs, modulesPath, lib, ... }: {
 
   imports = [
+    #"${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
     "${modulesPath}/installer/cd-dvd/installation-cd-graphical-calamares-gnome.nix"
   ];
 
